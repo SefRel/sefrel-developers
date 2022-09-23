@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    background-image: linear-gradient(rgba(0,0,0,3))
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+
+    
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin-top: 3px;
+    position: relative;
+    
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,5),transparent), url(/sefrel-developers/bgs7.jpg);
+    background-size: cover;;
+    background-position: center;
+    padding: 0 0;
+    position: relative;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+
+}
+
+nav ul li{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after {
+    width: 50%;
+}
+
+.text-box {
+    color:#fff;
+    position: absolute;
+    bottom: 5%;
+    padding: 0 5%;
+}
+
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.text-box h1{
+    font-size: 100px;
+    line-height: 160px;
+    margin-left: -10px;    
+}
+
+.text-box h3{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+
