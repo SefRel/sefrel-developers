@@ -1,0 +1,25 @@
+nav{
+    display: flex;
+    border-bottom:1px solid gray;   
+    width: fit-content; 
+}
+nav li{
+    list-style-type: none;
+    margin: 0 5px;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    
+}
+nav li a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8vw;
+    cursor: pointer;
+    padding: 10px 0 10px 0;
+    text-decoration: none;
+    color: rgba(146, 134, 134, 0.9);
+}
+nav li a:focus{
+    border-bottom: 2px solid rgb(100, 178, 100);
+    color: rgba(0, 0, 0, 1);
+}
