@@ -1,0 +1,363 @@
+
+/* body */
+/* End of body */
+
+/* header & navigation */
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    background-image: linear-gradient(rgba(0,0,0,3))
+}
+
+.header{
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(rgba(0,0,0,0),transparent), url();
+    background-size: cover;
+    background-position: center;
+    padding: 0 0;
+    position: relative;
+}
+
+.navbar{
+    padding: 0;
+    background-image: url("/img/sefrel_banner.png");
+    min-height: 190px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    /* Needed to position the navbar */
+    position: relative;
+}   
+
+.logo{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin-top: 3px;
+    position: relative;
+}
+
+
+nav ul{
+    flex: 1;
+    text-align: left;
+    padding-left: 50px;
+    margin-top: 130px;
+
+}
+
+nav ul li{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    color: #008000;
+    /* rgb(36, 143, 86) */
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after {
+    width: 50%;
+}
+
+/* dropdown */
+
+/* End of dropdown */
+
+/* End of header & navigation */
+
+/* Cards */
+
+@keyframes down-btn {
+    0% { bottom:20px; }    
+    100% { bottom:0px; }
+
+    0% { opacity:0; }    
+    100% { opaicty:1; }
+}
+
+@-webkit-keyframes down-btn {
+    0% { bottom:20px; }    
+    100% { bottom:0px; }
+
+    0% { opacity:0; }    
+    100% { opaicty:1; }
+}
+
+@-moz-keyframes down-btn {
+    0% { bottom:20px; }    
+    100% { bottom:0px; }
+
+    0% { opacity:0; }    
+    100% { opaicty:1; }
+}
+
+@-o-keyframes down-btn {
+    0% { bottom:20px; }    
+    100% { bottom:0px; }
+
+    0% { opacity:0; }    
+    100% { opaicty:1; }
+}
+
+body {
+    margin:0;
+}
+
+.category-name {
+    font-family: 'Times New Roman', Times, serif,sans-serif;
+    width: -webkit-fill-available;
+    text-align: center;
+    font-size: 40px;
+}
+
+.card-category-2 ul, .card-category-3 ul, .card-category-4 ul, .card-category-5 ul  .card-category-6 ul {
+    padding: 0;
+}
+    
+.card-category-2 ul li, .card-category-3 ul li, .card-category-4 ul li, .card-category-5 ul li, .card-category-6 ul li {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card-category-2 ul li, .card-category-3 ul li {
+    margin: 10px 5px;
+}
+
+.card-category-1, .card-category-2, .card-category-3, .card-category-4, .card-category-5, .card-category-6 {
+    font-family: 'Times New Roman', Times, serif,sans-serif;
+    margin-bottom: 45px;
+    text-align: center;
+}
+    .card-category-1 div, .card-category-2 div {
+        display:inline-block;
+    }
+
+    .card-category-1 > div, .card-category-2 > div:not(:last-child) {
+        margin: 10px 5px;
+        text-align: left;
+    }
+
+/* Basic Card */
+.basic-card {
+    width:300px;
+    position: relative;
+    
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -o-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+    .basic-card .card-content {
+        padding: 30px;
+    }
+
+    .basic-card .card-title {
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif,'Open Sans', sans-serif;
+    }
+
+    .basic-card .card-text {
+        line-height: 1.6;
+    }
+
+    .basic-card .card-link {
+        padding: 25px;
+        width: -webkit-fill-available;
+    }
+
+        .basic-card .card-link a {
+            text-decoration: none;
+            position: relative;
+            padding: 10px 0px;
+        }
+
+        .basic-card .card-link a:after {
+            top: 30px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            width: 0;
+
+            -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        }
+
+        .basic-card .card-link a:hover:after { 
+            width: 100%; 
+            left: 0; 
+        }
+
+
+.basic-card-aqua {
+    background-image: linear-gradient(to bottom right, #00bfad, #99a3d4);
+}
+
+    .basic-card-aqua .card-content, .basic-card .card-link a {
+        color: #fff;
+    }
+    
+    .basic-card-aqua .card-link {
+        border-top:1px solid #82c1bb;
+    }
+
+        .basic-card-aqua .card-link a:after {
+            background:#fff;
+        }
+
+.basic-card-lips {
+    background-image: linear-gradient(to bottom right, #346916, #7dff83);  
+    /* #ec407b, #ff7d94 */
+}
+
+    .basic-card-lips .card-content {
+        color: #fff;
+    }
+
+    .basic-card-lips .card-link {
+        border-top: 1px solid #72e98c;
+        /* #ff97ba */
+    }
+
+        .basic-card-lips .card-link a:after {
+            background:#fff;
+        }
+
+.basic-card-light {
+    border: 1px solid #eee;
+}
+
+    .basic-card-light .card-title, .basic-card-light .card-link a {
+        color: #636363;
+    }
+    
+    .basic-card-light .card-text {
+        color: #7b7b7b;
+    }
+
+    .basic-card-light .card-link {
+        border-top: 1px solid #eee;
+    }
+
+        .basic-card-light .card-link a:after {
+            background:#636363;
+        }
+
+.basic-card-dark {
+    background-image: linear-gradient(to bottom right, #252525, #4a4a4a);
+}
+
+    .basic-card-dark .card-title, .basic-card-dark .card-link a {
+        color:#eee;
+    }
+
+    .basic-card-dark .card-text {
+        color: #dcdcdcdd;
+    }
+
+    .basic-card-dark .card-link {
+        border-top: 1px solid #636363;
+    }
+
+    .basic-card-dark .card-link a:after {
+        background:#eee;
+    }
+    
+/* End of Cards */
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: #0f0f0f;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  #footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  
+  #footer p {
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .social-links {
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #008000;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .social-links a:hover {
+    background: #00b371;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .copyright {
+    margin: 0 0 5px 0;
+  }
+  
+  #footer .credits {
+    font-size: 13px;
+  }
+  
+  #footer .credits a {
+    color: #00b371;
+    transition: 0.3s;
+  }
+  
+  #footer .credits a:hover {
+    color: #009961;
+  }
