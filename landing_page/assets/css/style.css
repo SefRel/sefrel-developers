@@ -663,18 +663,18 @@ section {
   position: relative;
 }
 
-.services .icon-box .icon svg {
+/* .services .icon-box .icon svg {
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
-.services .icon-box .icon svg path {
+/* .services .icon-box .icon svg path {
   transition: 0.5s;
   fill: #f5f5f5;
-}
+} */
 
-.services .icon-box h4 {
+/* .services .icon-box h4 {
   font-weight: 600;
   margin: 10px 0 15px 0;
   font-size: 22px;
@@ -766,7 +766,7 @@ section {
 
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1247,7 +1247,7 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
